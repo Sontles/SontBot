@@ -83,7 +83,7 @@ if(SONTAPI == "this is so sad, sont, dont play anything") {
 
   }
 
-if(SONTAPI == "Hans, get ze flammenwerfer") {
+if(SONTAPI == "hans, get ze flammenwerfer") {
     const voiceChannel = message.member.voiceChannel;
     if (!voiceChannel) {
       return message.reply(`Du bist nicht im Sprach-Kanal, mein Kamerad`);
