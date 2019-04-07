@@ -37,8 +37,8 @@ client.on("guildMemberAdd", (member) =>  {
 client.on("message", (message) => {
     var SONTAPI = message.content.toUpperCase();
 if(message.content.startsWith('BTTF') || message.content.startsWith('BTTF')) {
-    message.author.send('When this baby hits 88 miles per hour, youre gonna see some serious shit')
-    message.author.send('https://thumbs.gfycat.com/CookedShoddyDogwoodclubgall-size_restricted.gif')
+    message.channel.send('When this baby hits 88 miles per hour, youre gonna see some serious shit')
+    message.channel.send('https://imgur.com/gallery/sTJXyaB')
  }
     if(SONTAPI == "i dont like yugos") {
     message.channel.send(`Well fuck you then`)
