@@ -21,7 +21,7 @@ client.on("guildMemberAdd", (member) =>  {
   if(member.user.username.includes("discord.gg")) {
     member.kick()
   }else{
-  member.guild.channels.find("name", "general").send(`${member.user}, Wroom Wroom! Welcome! Please read rules, or ill never give you the keys to the Yugo!!!`); 
+  member.guild.channels.find("name", "general").send(`${member.user}, Welcome, please read #rules`); 
   console.log(`${member.user} Joined`);
   }
 });
@@ -30,7 +30,7 @@ client.on("guildMemberAdd", (member) =>  {
 // Leave
   client.on("guildMemberRemove", (member) => {
     const membertag = member.user.tag
-    member.guild.channels.find("name", "general").send(`${membertag} Awwww! Why did you leave?! Well i guess i have extra keys now`);
+    member.guild.channels.find("name", "general").send(`${membertag} oi. the fucker left.`);
     console.log(`${member.user} left `);
   });
 
