@@ -36,7 +36,7 @@ client.on("guildMemberAdd", (member) =>  {
 
 client.on("message", (message) => {
     var SONTAPI = message.content.toUpperCase();
-if(message.content.includes('BTTF') || message.content.startsWith('BTTF')) {
+if(message.content.contains('BTTF') || message.content.startsWith('BTTF')) {
     message.author.send('When this baby hits 88 miles per hour, youre gonna see some serious shit')
     message.author.send('https://thumbs.gfycat.com/CookedShoddyDogwoodclubgall-size_restricted.gif')
  }
