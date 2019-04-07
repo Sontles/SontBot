@@ -83,14 +83,14 @@ if(SONTAPI == "this is so sad, sont, dont play anything") {
 
   }
 
-if(SONTAPI == "bork") {
+if(SONTAPI == "Hans, get ze flammenwerfer") {
     const voiceChannel = message.member.voiceChannel;
     if (!voiceChannel) {
-      return message.reply(`Please be in a voice channel first!`);
+      return message.reply(`Du bist nicht im Sprach-Kanal, mein Kamerad`);
     }
     voiceChannel.join()
       .then(connnection => {
-        let stream = yt("https://youtu.be/HpiE45VVlf8", {audioonly: true});
+        let stream = yt("https://youtu.be/e5tEoIrXK6o", {audioonly: true});
         const dispatcher = connnection.playStream(stream);
         dispatcher.on('end', () => {
           voiceChannel.leave();
