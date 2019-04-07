@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const randomcolor = require('randomcolor');
-const config = require("./config.json")
+const config = require("./totallynotconfig.json")
 const moment = require('moment');
 client.on("message", async message => {
 const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
