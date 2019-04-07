@@ -35,8 +35,8 @@ client.on("guildMemberAdd", (member) =>  {
   });
 
 client.on("message", (message) => {
-    var SONTAPI = message.content.toLowerCase();
-if(message.content.startsWith('BTTF') || message.content.startsWith('yugos are great')) {
+    var SONTAPI = message.content.toUpperCase();
+if(message.content.includes('BTTF') || message.content.startsWith('BTTF')) {
     message.author.send('When this baby hits 88 miles per hour, youre gonna see some serious shit')
     message.author.send('https://thumbs.gfycat.com/CookedShoddyDogwoodclubgall-size_restricted.gif')
  }
@@ -67,7 +67,7 @@ client.login(config.token)
 
 client.on("message", (message) => {
 var SONTAPI = message.content.toLowerCase();
-if(SONTAPI == "this is so sad, yugo play despacito") {
+if(SONTAPI == "this is so sad, sont, dont play anything") {
     const voiceChannel = message.member.voiceChannel;
     if (!voiceChannel) {
       return message.reply(`Please be in a voice channel first!`);
